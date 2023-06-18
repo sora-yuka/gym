@@ -152,22 +152,22 @@ SIMPLE_JWT = {
 
 SITE_ID = 1
 
-SOCIALACCOUNT_PROVIDERS = {
-    'github': {
-        'APP': {
-            'client_id': config('SOCIAL_AUTH_GITHUB_ID'),
-            'secret': config('SOCIAL_AUTH_GITHUB_SECRET'),
-            'key': ''
-        }
-    },
-    'facebook': {
-        'APP': {
-            'client_id': config('SOCIAL_AUTH_FACEBOOK_ID'),
-            'secret': config('SOCIAL_AUTH_FACEBOOK_SECRET'),
-            'key': ''
-        }
-    }
-}
+# SOCIALACCOUNT_PROVIDERS = {
+#     'github': {
+#         'APP': {
+#             'client_id': config('SOCIAL_AUTH_GITHUB_ID'),
+#             'secret': config('SOCIAL_AUTH_GITHUB_SECRET'),
+#             'key': ''
+#         }
+#     },
+#     'facebook': {
+#         'APP': {
+#             'client_id': config('SOCIAL_AUTH_FACEBOOK_ID'),
+#             'secret': config('SOCIAL_AUTH_FACEBOOK_SECRET'),
+#             'key': ''
+#         }
+#     }
+# }
 
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_EMAIL_REQUIRED = True
