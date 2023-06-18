@@ -191,38 +191,6 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-
-    'formatters': {
-        'main': {
-            'format': '{levelname} -- {asctime} -- {module} -- {message}',
-            'style': '{'
-        }
-    },
-
-    'handlers': {
-        'my_console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'main'
-        },
-        'file': {
-            'class': 'logging.FileHandler',
-            'filename': 'info.log',
-            'formatter': 'main'
-        },
-    },
-
-    'loggers': {
-        'main': {
-            'level': 'INFO',
-            'handlers': ['my_console', 'file']
-        },
-    }
-}
-
-
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
